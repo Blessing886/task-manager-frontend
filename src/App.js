@@ -6,7 +6,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>Task Management System</h1>
         <Main />
       </div>
     </Router>
