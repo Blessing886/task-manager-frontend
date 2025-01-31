@@ -11,3 +11,168 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(104, 106, 226);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav .nav-links {
+  display: flex;
+  margin-left: auto;
+}
+nav h1 {
+  margin: 0;
+  margin-right: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(3, 3, 15, 0.425);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+nav li {
+  margin-right: 10px;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: black;
+}
+
+body, .main-content {
+  max-width: 600px;
+}
+
+.tasklist-container {
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tasklist-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.tasklist {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  margin: 0.5rem 0;
+}
+
+.task-button {
+  width:100%;
+  background-color: #46179e;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.task-button:hover {
+  background-color: #5c1bc6;
+  transform: translateY(-2px);
+}
+
+.task-detail {
+  margin-top: 1.5rem;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-detail h3 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.task-detail p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.task-detail h4 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.task-detail ul {
+  margin-top: 0.5rem;
+}
+
+.task-detail li {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  list-style: none;
+}
+
+.comment-box {
+  margin-top: 1.5rem;
+}
+
+.comment-box textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-box button {
+  background-color: #46179e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-box button:hover {
+  background-color: #5c1bc6;
+}

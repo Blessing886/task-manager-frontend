@@ -28,12 +28,12 @@ function TaskList() {
     };
 
     return (
-      <div>
-        <h2>Tasks</h2>
-      <ul>
+      <div className="tasklist-container">
+        <h2 className="tasklist-heading">Tasks</h2>
+      <ul className="tasklist">
         {tasks.map(({ id, title }) => (
-          <li key={id}>
-            <button onClick={() => handleTaskClick(id)} >
+          <li key={id} className="task-item">
+            <button className="task-button" onClick={() => handleTaskClick(id)} >
               {title}
             </button>
           </li>
@@ -41,7 +41,7 @@ function TaskList() {
       </ul>
 
       {selectedTask && (
-        <div >
+        <div className="task-detail" >
           <h3>{selectedTask.title}</h3>
           <p><strong>Description:</strong> {selectedTask.description}</p>
           <p><strong>Status:</strong> {selectedTask.status}</p>

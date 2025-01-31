@@ -7,10 +7,10 @@ function AssignForm({ onTaskCreated }) {
   const [priority, setPriority] = useState("");
   const [createdBy, setCreatedBy] = useState("");
   const [dueDate, setDueDate] = useState("");
-  const [department, setDepartment] = useState(""); // Selected department
+  const [department, setDepartment] = useState("");
   const [assignedUsers, setAssignedUsers] = useState([]);
   const [users, setUsers] = useState([]);
-  const [filteredUsers, setFilteredUsers] = useState([]); // Users filtered by department
+  const [filteredUsers, setFilteredUsers] = useState([]);
   const [departments, setDepartments] = useState([]);
   const [assignedUserIds, setAssignedUserIds] = useState([]); 
   const [message, setMessage] = useState("");
