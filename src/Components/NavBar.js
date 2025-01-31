@@ -6,6 +6,7 @@ function NavBar() {
     <nav>
       <h1>Task Manager</h1>
       <ul>
+      <li><Link to="/search-details">Search Details</Link></li>
       <li><Link to="/task-list">Task List</Link></li>
       <li><Link to="/assign-task">Assign Task</Link></li>
       </ul>

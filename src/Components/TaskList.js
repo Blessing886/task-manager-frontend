@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import CommentSubmission from "./CommentSubmission";
 
 function TaskList() {
   const [tasks, setTasks] = useState([]);
-  const [selectedTask, setSelectedTask] = useState('');
+  const [selectedTask, setSelectedTask] = useState(null);
+  const [userId, setUserId] = useState(null);
 
   useEffect(() => {
       fetch(`/tasks`)
@@ -16,7 +18,12 @@ function TaskList() {
     const handleTaskClick = (taskId) => {
       fetch(`/tasks/${taskId}`)
         .then((response) => response.json())
-        .then(setSelectedTask)
+        .then((task) => {
+          setSelectedTask(task);
+          if (task.assigned_users.length > 0) {
+            setUserId(task.assigned_users[0].id);
+          }
+        })
         .catch((error) => console.error('Error fetching task details:', error));
     };
 
@@ -40,7 +47,7 @@ function TaskList() {
           <p><strong>Status:</strong> {selectedTask.status}</p>
           <p><strong>Priority:</strong> {selectedTask.priority}</p>
           <p><strong>Due Date:</strong> {selectedTask.due_date}</p>
-
+          
           <h4>Assigned Users</h4>
           {selectedTask.assigned_users.length ? (
             <ul>
@@ -58,6 +65,7 @@ function TaskList() {
               ))}
             </ul>
           ) : <p>No comments.</p>}
+          {userId && <CommentSubmission taskId={selectedTask.id} userId={userId} />}
         </div>
       )}
       </div>

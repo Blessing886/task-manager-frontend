@@ -9,7 +9,7 @@ function Main() {
         <div>
           <NavBar />
           <Routes>
-            <Route path='/' element={<SearchDetails />} />
+            <Route path='/search-details' element={<SearchDetails />} />
             <Route path='/Task-List' element={<TaskList />}/>
             <Route path='/assign-task' element={<AssignForm />}/>
           </Routes>
