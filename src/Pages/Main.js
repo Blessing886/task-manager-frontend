@@ -9,6 +9,7 @@ function Main() {
         <div>
           <NavBar />
           <Routes>
+            <Route></Route>
             <Route path='/search-details' element={<SearchDetails />} />
             <Route path='/Task-List' element={<TaskList />}/>
             <Route path='/assign-task' element={<AssignForm />}/>

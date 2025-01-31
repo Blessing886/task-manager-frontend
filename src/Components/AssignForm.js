@@ -87,7 +87,7 @@ function AssignForm({ onTaskCreated }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="assignform-container">
       <h3>Create & Assign Task</h3>
 
       <label>
@@ -175,8 +175,8 @@ function AssignForm({ onTaskCreated }) {
 
       <button type="submit">Create Task</button>
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      {message && <p style={{ color: "green" }}>{message}</p>}
+      {error && <p className="err-msg">{error}</p>}
+      {message && <p className="success-msg">{message}</p>}
     </form>
   );
 }

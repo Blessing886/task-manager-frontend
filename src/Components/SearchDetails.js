@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import UserDetails from './UserDetails';
 
+<h1>MAKE A SEARCH</h1>
 function SearchDetails() {
   const [searchDetail, setSearchDetail] = useState('');
   const [searchType, setSearchType] = useState('users');
