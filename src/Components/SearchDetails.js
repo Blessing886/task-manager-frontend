@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import UserDetails from './UserDetails';
 
-<h1>MAKE A SEARCH</h1>
 function SearchDetails() {
   const [searchDetail, setSearchDetail] = useState('');
   const [searchType, setSearchType] = useState('users');
@@ -34,7 +33,7 @@ function SearchDetails() {
   };
  
   return (
-    <div>
+    <div className='search-container'>
       <input
         type="text"
         value={searchDetail}
@@ -51,7 +50,7 @@ function SearchDetails() {
       </select>
       <button onClick={handleSearch}>Search</button>
 
-      <div>
+      <div className='results-container'>
       <h3>Results</h3>
       {loading ? (
         <p>Loading...</p>
