@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# TASK-BRIDGE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### By
+--Blessing Okora
 
-## Available Scripts
+## Overview
+The **TASK-BRIDGE** app is a **task management system** that allows users to manage tasks and employees. It allows task assignment, updating of task progress by employees and searching for user and task details.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Home page.
+- Task assignment form.
+- Search feature.
+- Task details page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## View Live Site
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Visit the deployed application at : [Task-Bridge App] (https://task-bridge.netlify.app/)
 
-### `npm test`
+The live allows you to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Search for user details.
+- Assign tasks through a form.
+- Comment on a task.
+- Obtain information on a task by clicking on the task title.
 
-### `npm run build`
+## Technologies Used
+- **React js**: Built with `create-react-app` for a streamlined react environment.
+- **CSS**: Styling of the web application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- [Node.js] and npm (Node Package Manager) installed on your local machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:https://github.com/Blessing886/task-manager-frontend.git
+2. Navigate into the "task-manager-frontend" directory.
+3. Install dependencies:
+```bash 
+npm i react-router-dom
+```
+4. Start the React development server in a new terminal:
+```bash
+npm Start
+```
+5. Open the app in your browser at http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Related Repositories
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Repository: [taskmanager3- Repository](https://github.com/Blessing886/task-manager3.git)
+- Deployed API: [Live API URL](https://task-manager3-cl1c.onrender.com)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Support and Contact Details
 
-## Learn More
+- Email: <moraablessing082@gmail.com>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licence
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT License
 
-### Code Splitting
+Copyright (c) 2025 Blessing Okora
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Analyzing the Bundle Size
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
