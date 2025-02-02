@@ -4,7 +4,7 @@ function UserDetails({ user }) {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetch(`/users/${user.id}/tasks`)
+    fetch(`https://task-manager3-cl1c.onrender.com/${user.id}/tasks`)
       .then((response) => response.json())
       .then(setTasks)
       .catch((error) => {

@@ -17,20 +17,20 @@ function AssignForm({ onTaskCreated }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/users")
+    fetch("https://task-manager3-cl1c.onrender.com/users")
       .then((response) => response.json())
       .then((data) => {
         setUsers(data);
-        setFilteredUsers(data); // Initially, show all users
+        setFilteredUsers(data); // Initially, show all users to allow selection of desired user
       })
       .catch((err) => console.error("Error fetching users:", err));
 
-    fetch("/departments") // Fetch departments
+    fetch("https://task-manager3-cl1c.onrender.com/departments") // Fetch departments
       .then((response) => response.json())
       .then(setDepartments)
       .catch((err) => console.error("Error fetching departments:", err));
 
-    fetch("/tasks/assignments")
+    fetch("https://task-manager3-cl1c.onrender.com/tasks/assignments")
       .then((response) => response.json())
       .then((assignments) => {
         setAssignedUserIds(assignments.map((assignment) => assignment.user_id));
@@ -52,7 +52,7 @@ function AssignForm({ onTaskCreated }) {
     setError(null);
     setMessage("");
 
-    fetch("/tasks", {
+    fetch("https://task-manager3-cl1c.onrender.com/tasks", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -63,7 +63,7 @@ function AssignForm({ onTaskCreated }) {
         created_by_user_id: createdBy,
         due_date: dueDate,
         assigned_users: assignedUsers,
-        department: Number(department), // Ensure department is sent as a number
+        department: Number(department), // Ensures that the department is sent as a number
       }),
     })
       .then((response) => response.json().then((data) => ({ status: response.status, data })))

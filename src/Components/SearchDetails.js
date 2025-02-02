@@ -9,7 +9,7 @@ function SearchDetails() {
 
   const fetchDetails = (resource, query) => {
     setLoading(true);
-    fetch(`/${resource}?q=${query}`)
+    fetch(`https://task-manager3-cl1c.onrender.com/${resource}?q=${query}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error fetching ${resource}: ${response.statusText}`);

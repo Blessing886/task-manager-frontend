@@ -7,7 +7,7 @@ function TaskList() {
   const [userId, setUserId] = useState(null);
 
   useEffect(() => {
-      fetch(`/tasks`)
+      fetch(`https://task-manager3-cl1c.onrender.com/tasks`)
         .then((response) => response.json())
         .then(setTasks)
         .catch((error) => {
@@ -16,7 +16,7 @@ function TaskList() {
     }, []);
 
     const handleTaskClick = (taskId) => {
-      fetch(`/tasks/${taskId}`)
+      fetch(`https://task-manager3-cl1c.onrender.com/tasks/${taskId}`)
         .then((response) => response.json())
         .then((task) => {
           setSelectedTask(task);

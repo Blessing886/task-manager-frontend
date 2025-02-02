@@ -13,7 +13,7 @@ function CommentSubmission({ taskId, userId }) {
       return;
     }
 
-    fetch(`http://127.0.0.1:5555/tasks/${taskId}/comments`, {
+    fetch(`https://task-manager3-cl1c.onrender.com/tasks/${taskId}/comments`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ user_id: userId, comment }),
